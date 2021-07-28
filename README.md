@@ -37,14 +37,6 @@ The dataset are interleaved in the following scheme:
 | 30   |  -   | * |
 * is training; - is testing
 
-## Setup without CoCalc
-1. Download the data from [Kaggle](https://www.kaggle.com/c/mlhep2021-classification/data)
-2. Extract it with `tar -xvf MLHEP-2021-train.tar.xz && tar -xvf MLHEP-2021-test.tar.xz`
-3. Install [poetry](https://python-poetry.org/docs/#installation)
-4. Set up the poetry environment with `poetry install`
-5. Change `config.ini[DATA][DatasetPath]` to the location of the extracted data
-6. Prefex all your commands with `poetry run`
-
 ## Training
 If you want to retrain the model from scratch just run:
 ```
@@ -60,9 +52,6 @@ python report.py
 ```
 This will generate `./resultsreport.log` in the current directory containg information and bunch of plots in the `./results/` directory
 
----
-### Classification
-![](results/roc_auc.png)
 ---
 ### Regression
 ![](results/energy_comparison.png)

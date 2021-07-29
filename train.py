@@ -54,7 +54,7 @@ def main():
     )
     dataset_dm.prepare_data()
     dataset_dm.setup()
-    filename='best_model_52/best_model-{epoch:02d}-{val_loss:.2f}'
+    filename='best_model_53/best_model-{epoch:02d}-{val_loss:.2f}'
 
     #for mode in ["classification", "regression"]:
     mode = "regression"

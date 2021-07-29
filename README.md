@@ -1,4 +1,18 @@
 # MLHEP-2021 Baseline + some tweaks
+## Important information
+To train the model again run
+
+```
+python train.py
+```
+
+The best 3 models will be stored in `checkpoint_model/best_model_53/`.
+The model that generates my best submission is stored in `checkpoints_model/best_model_52`, which is the filepath given to both report.py and generate_submission.py. Hence, to obtain my submission's report and .csv run:
+
+```
+python report.py && python generate_submission.py
+```
+
 ## Dataset
 Dataset is on CoCalc in folder `/home/user/share/competition` and is available at [Kaggle](https://www.kaggle.com/c/mlhep2021-classification/data)
 
@@ -36,14 +50,6 @@ The dataset are interleaved in the following scheme:
 | 20   |  *   | - |
 | 30   |  -   | * |
 * is training; - is testing
-
-## Training
-If you want to retrain the model from scratch just run:
-```
-mv checkpoints checkpoints_bk && python train.py
-```
-This will move the original checkpoints and run the experiment again.
-Note you can modify `config.ini` to load the checkpoint without moving the files.
 
 ## Results 
 To generate the report just run:

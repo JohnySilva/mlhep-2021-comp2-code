@@ -7,7 +7,7 @@ python train.py
 ```
 
 The best 3 models will be stored in `checkpoint_model/best_model_53/`.
-The model that generates my best submission is stored in `checkpoints_model/best_model_52`, which is the filepath given to both report.py and generate_submission.py. Hence, to obtain my submission's report and .csv run:
+The model that generates my best submission is stored in `checkpoints_model/best_model_52/best_model-epoch=18-val_loss=8.42.ckpt`, which is the filepath given to both report.py and generate_submission.py. Hence, to obtain my submission's report and .csv run:
 
 ```
 python report.py && python generate_submission.py
